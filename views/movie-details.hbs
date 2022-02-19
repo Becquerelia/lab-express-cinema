@@ -1,11 +1,22 @@
 
-<div>
+<div id="each-movie">
+    <div>
+        <img src="{{response.image}}" alt="{{response.title}}" width="200px">
+    </div>
 
-    <img src="{{response.image}}" alt="{{response.title}}">
-    <h2>{{response.title}}</h2>
-    <h3> Director: {{response.director}}</h3>
-    <p>Stars: <br>{{response.stars}}</p>
-    <p>{{response.description}}</p>
-    <p>{{response.showtimes}}</p>
-
+    <div class="info-movie">
+        <a href="/movies">Go back</a>
+        <h2>{{response.title}}</h2>
+        <h3> Director: {{response.director}}</h3>
+        <h4>Stars:</h4>
+        <ul>
+            {{#each response.stars}}
+            <li>{{this}}</li>
+            {{/each}}            
+        </ul>
+        
+        <p>{{response.description}}</p>
+        <p>{{#each response.showtimes}} {{this}} | {{/each}}</p>
+       
+    </div>
 </div>
