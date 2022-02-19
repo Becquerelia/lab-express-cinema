@@ -42,3 +42,21 @@ h1 {
   padding: 20px 60px;
   border-radius: 30px;
 }
+
+#title {
+  margin-left: 50px;
+}
+
+#catalogo {
+  margin-left: 50px;
+  width: 960px;
+  height: 710px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article {
+  margin: 10px;
+}
