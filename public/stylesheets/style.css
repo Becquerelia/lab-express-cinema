@@ -1,8 +1,44 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;  
+}
+
+#homepage {
+  background-image: url("/images/cinema.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 450px;
+
+  /*¿Cómo puedo ajustar mejor la imagen sin recurrir al padding para que ocupe bien la pantalla? */
 }
 
 a {
   color: #00B7FF;
+}
+
+section {
+  height: 500px;
+  color: white;
+  font-size: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+h1 {
+  margin-right: 160px;
+  margin-bottom: 10px;
+}
+
+#check-movies {
+  margin-right: 520px;
+  color: #00B7FF;
+  font-size: 20px;
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 30px;
 }
